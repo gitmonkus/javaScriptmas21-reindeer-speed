@@ -1,0 +1,32 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class="main-container">
+            
+        <h1>Reindeer speedometer <img id="cutey" class="cutey" src="img/cutey.png" alt="cute reindeer cartoon"></h1>
+        <p>Enter current location and journey time to discover average reindeer speed.</p>
+        <div class="container">
+                <label for="select">Current location:</label>
+                <select id="select">
+                    <option value="Kiev" disabled selected>North Pole</option>
+                    <option id="munich" value="Munich">Munich</option>
+                    <option value="Kiev">Kiev</option>
+                    <option value="Ulaanbaatar">Ulaanbaatar</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="Tijuana">Tijuana</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+                <label for="time">Journey time:</label>
+                <input type="number" id="time" name="time" value=0> 
+        </div>
+        <p>The reindeer must travel at <span id="speedometer" class="enhance">___</span> MPH in order to reach <span id="destination" class="enhance">___</span> in time!</p>
+        
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>

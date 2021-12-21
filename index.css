@@ -1,0 +1,111 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+  --dark: #204C88;
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: var(--dark);
+    background: url(img/reindeer.png) no-repeat;
+    background-size: cover;
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    color: var(--dark);
+    text-shadow: 2px 2px 1px var(--snow);
+    border-bottom: 4px dashed var(--snow);
+    box-shadow: 0 3px 2px -2px var(--dark);
+    padding-bottom: 20px;
+}
+.cutey:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+p {
+   padding: 20px;
+   font-size: 25px;
+    text-shadow: 2px 2px 1px var(--snow);
+
+}
+
+.main-container {
+    background: rgba(255,255,255,.7);
+    padding: 40px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(32, 76, 136,.5);
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+label {
+    font-size: 30px;
+    text-align: left;
+    color: var(--snow);
+    text-shadow: 2px 2px 1px var(--dark);
+}
+
+input,
+select{ 
+    margin: 0.25em;
+    padding: 5px;
+    border: 4px dashed transparent;
+     font-family: inherit;
+     font-weight: inherit;
+     font-size: 30px;
+     color: var(--dark);
+}
+
+select {
+    margin-bottom: 0.5em;
+  
+}
+select > * {
+    font-weight: inherit;
+}
+select:focus,
+input:focus {
+    outline: none;
+    border: 4px dashed var(--dark);
+}
+.enhance {
+    font-weight: bold;
+    color: var(--bright-red);
+}
+
+@keyframes cutey {
+    0% {
+       transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
